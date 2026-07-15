@@ -2,8 +2,8 @@ const fs = require('fs')
 const path = require('path')
 
 const rootDir = __dirname
-const frontendDist = path.join(rootDir, 'react-frontend', 'dist')
-const backendPublic = path.join(rootDir, 'nodejs-backend', 'public')
+const frontendDist = path.join(rootDir, 'frontend', 'dist')
+const backendPublic = path.join(rootDir, 'backend', 'public')
 
 function removeDir(dirPath) {
   if (fs.existsSync(dirPath)) {
